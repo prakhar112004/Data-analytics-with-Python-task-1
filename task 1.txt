@@ -1,0 +1,50 @@
+'''task:1 understanding the basic Datatypes in python Date :21/06/2024
+Task Description :- write a program in python to create a list , dictinary and a set .
+Operation to the perfromed are:
+first we created a list
+1) adding a element
+2) removing a element 
+3) Update the element 
+'''
+# creating a list
+lst=[1,2,3,6]
+#adding  element 
+lst.append(10)
+#removing a element
+lst.remove(6)
+#updating the element
+lst[1]=8
+
+print("the updated list is :" , lst)
+#output : the updated list is : [1,8,3,10]
+
+'CREATING A DICTINARY'
+
+student={
+    'name ':'Prakhar Bhatnagar',
+    'course ': 'BCA',
+    'age':'20',
+}
+#adding a key value pair
+student['gender']='male'
+#removing a key value of a key 
+del student ['age']
+#uodating the values of a key 
+student ['age']='22'
+print("the updated Dictinary is : ", student)
+
+#output : the updated Dictionary is : {'Name':'prakhar','Course':'BCA','Gender':'male'}
+
+
+'CREATING A SET'
+st={1,1,2,2,3,3,4,4}
+#adding a element 
+st.add(6)
+#removing a element
+st.remove(3)
+#updating the element
+st.discard(2)
+st.add(5)
+
+print ("the updated set is :" , st)
+#output : the Updated set is : {1,1,5,5,4,4,6,6}
